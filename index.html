@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Blastroids</title>
+    <script src="./lib/phaser.js"></script>
+    <script src="./src/Menu.js"></script>
+    <script src="./src/Play.js"></script>
+    <script src="./src/Main.js"></script>
+    
+    <style>
+        body {
+            background-color: rgb(14, 34, 53);
+            display: flex;
+            justify-content: center; 
+            height: 90vh;
+
+        }
+
+        @font-face {
+            font-family: Eightbitext;
+            src: url(./assets/8bit16.ttf) format('truetype');
+        }
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            custom: {
+                families: ['Eightbitext']
+            },
+            active: function() {
+                console.log('Font is loaded');
+            }
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
