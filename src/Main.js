@@ -27,3 +27,12 @@ let TextStyle = {
 
 let game = new Phaser.Game(config)
 
+/* 
+
+Hernandez Steven
+CMPM 120
+3/18/24
+
+Phaser Components used: Collision Physics, Particles, Sprite Animation, Tweens, tilesprites, and Timer events 
+
+/*
