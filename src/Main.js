@@ -1,7 +1,6 @@
 let config = {
     type: Phaser.AUTO,
-    PixelArt: true,
-    antialias: true,
+    antialias: false,
     width:  1050,
     height: 720,
     physics: {
@@ -27,3 +26,4 @@ let TextStyle = {
 }
 
 let game = new Phaser.Game(config)
+
