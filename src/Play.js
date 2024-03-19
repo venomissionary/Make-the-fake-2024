@@ -6,8 +6,8 @@ class Play extends Phaser.Scene {
 
     preload() {
         this.load.image('LifeBar', './assets/LifeBar.png')
-        this.load.image('bulletf', '/assets/bullet.png')
-        this.load.image('planet', '/assets/Planet.png')
+        this.load.image('bulletf', './assets/bulletheader.png')
+        this.load.image('planet', './assets/planet.png')
         this.load.image('LevelComp', './assets/Level.png')
 
         this.load.spritesheet('Player', './assets/Test2.png', { frameWidth: 42, frameHeight: 51 })
