@@ -13,7 +13,7 @@ class Play extends Phaser.Scene {
         this.load.spritesheet('Player', './assets/Test2.png', { frameWidth: 42, frameHeight: 51 })
         this.load.spritesheet('Enemy_1', './assets/Test3.png', { frameWidth: 40.6, frameHeight: 28 })
 
-        this.load.audio('Explode_1', './assets/Explosion.wav')
+        this.load.audio('explode_1', './assets/Explosion.wav')
         this.load.audio('LifeSound_1', './assets/LifeSound.wav')
         this.load.audio('Shooting', './assets/Shoot.wav')
         this.load.audio('Congrats', './assets/Congrats.wav')
@@ -204,7 +204,7 @@ class Play extends Phaser.Scene {
         this.Scoreboard()
         bullet.destroy()
         enemy.destroy()
-        this.sound.play('Explode_1', { volume: 0.2 })
+        this.sound.play('explode_1', { volume: 0.2 })
     }
 
     NextLevel() {
