@@ -6,8 +6,8 @@ class Play extends Phaser.Scene {
 
     preload() {
         this.load.image('LifeBar', './assets/LifeBar.png')
-        this.load.image('bullet_1', '/assets/bullet.png')
-        this.load.image('Planet', '/assets/Planet.png')
+        this.load.image('bulletf', '/assets/bullet.png')
+        this.load.image('planet', '/assets/Planet.png')
         this.load.image('LevelComp', './assets/Level.png')
 
         this.load.spritesheet('Player', './assets/Test2.png', { frameWidth: 42, frameHeight: 51 })
@@ -33,7 +33,7 @@ class Play extends Phaser.Scene {
         this.setGameOver = false
 
         this.add.image(ScreenBorder.width, ScreenBorder.y, 'LevelComp')
-        this.TileImage = this.add.tileSprite(this.centerX, this.centerY, 4200, 720, 'Planet').setOrigin(0.5, 0).setScale(0.5).setAlpha(0.02)
+        this.TileImage = this.add.tileSprite(this.centerX, this.centerY, 4200, 720, 'planet').setOrigin(0.5, 0).setScale(0.5).setAlpha(0.02)
 
         this.key = this.input.keyboard.createCursorKeys()
         this.Lkey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.L)
@@ -77,7 +77,7 @@ class Play extends Phaser.Scene {
         })
 
         this.Bullets = this.physics.add.group({
-            defaultKey: 'bullet_1'
+            defaultKey: 'bulletf'
         })
 
         this.Enemies = this.physics.add.group()
